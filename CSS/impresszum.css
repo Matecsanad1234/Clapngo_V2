@@ -18,35 +18,16 @@ body {
   );
   border: 0px;
   margin: 0px;
+  padding: 20px;
 }
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-table {
-  height: 100%;
-  width: 100%;
-}
-td,
-th {
-  height: 60px;
-  width: 60px;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-
 button {
-  height: 60px;
-  width: 180px;
+  height: 40px;
+  width: 140px;
   border-radius: 12px;
   background-color: #b687cd;
   border: none;
   color: #f7e720;
-  font-size: 30px;
+  font-size: 20px;
   cursor: pointer;
   font-family: "Lilita One", sans-serif;
   font-weight: 400;
@@ -63,4 +44,20 @@ button:hover {
   50% {
     transform: scale(1.05);
   }
+  100% {
+    transform: scale(1);
+  }
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  background: #dbb9ed;
+  width: 600px;
+  border-radius: 5%;
+}
+.label {
+  width: 200px;
+  border-radius: 5px;
+  background: #f7e720;
 }
