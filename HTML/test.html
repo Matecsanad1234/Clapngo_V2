@@ -150,6 +150,36 @@
       font-weight: 400;
       font-style: normal;
 }
+.frame-right{
+      position: absolute;
+      padding: 10px;
+      top: 0;
+      left: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      transition: transform 0.6s ease-in-out;
+      font-family: "Lilita One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+}
+.firstLine{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.secondLine{
+  width: 100%;
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 .first{
   height: 30%;
   width: 100%;
@@ -165,6 +195,25 @@
   text-align: center;
   padding: 15px;
 }
+.card{
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 300px;
+  padding: 20px;
+  background-color: #B687CD;
+  border-radius: 12px;
+  margin: 30px;
+}
+.card h1{
+  color: #f7e720;
+  font-size: 40px;
+}
+.card p{
+  color: #fff;
+  font-size: 25px;
+}
+
 
   </style>
 </head>
@@ -230,14 +279,26 @@
 
 <!------------------------------------------------------------------------------------------------------------>
 
-  <div class="frame content-frame hidden" id="rightFrame" style="flex-direction: column; transform: translateX(100%);">
+  <div class="frame-right content-frame hidden" id="rightFrame" style="flex-direction: column; transform: translateX(100%);">
     <div class="firstLine">
-      <div class="leftCard">
+      <div class="card">
         <h1>SÜTIK KEZELÉSE</h1>
         <p>A kezelesi informaciok megtalalhatoak <a href="https://clapngo.hu/wp-content/uploads/2025/04/Cookie-tajekoztato_Clapngo2.pdf">itt.</a></p>
       </div>
-      <div class="centerCard"></div>
-      <div class="rightCard"></div>
+      <div class="card">
+        <h1>ÁSZF</h1>
+        <p>Az altalanos szerzodesi feltetelekrol <a href="https://clapngo.hu/wp-content/uploads/2025/04/Cookie-tajekoztato_Clapngo2.pdf">itt olvashat.</a></p>
+      </div>
+      <div class="card">
+        <h1>ADATKEZELES</h1>
+        <p>A honlap adatkezelesi informacioi <a href="https://clapngo.hu/wp-content/uploads/2025/04/Cookie-tajekoztato_Clapngo2.pdf">itt</a>  talalhatoak</p>
+      </div>
+    </div>
+    <div class="secondLine">
+      <div class="letoltos">
+        <img src="../IMG/app-store.png" alt="APP STORE DOWNLOAD" width="30%">
+        <img src="../IMG/google-play.png" alt="PLAYSTORE DOWNLOAD" width="30%">
+      </div>
     </div>
     <button class="back-btn" onclick="goBack('right')">Vissza</button>
   </div>
