@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clap'n Go Menü</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: sans-serif;
+      font-family: "Lilita One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    body {
+      background: linear-gradient(135deg, #b35ce3, #7928ca);
+    }
+    .container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .frame {
+      position: absolute;
+      padding: 10px;
+      top: 0;
+      left: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.6s ease-in-out;
+      font-family: "Lilita One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .frame h1{
+      color: #fff;
+      font-size: 50px;
+    }
+    .main {
+      background: none;
+      z-index: 2;
+    }
+    .frame img {
+      max-width: 50%;
+      height: auto;
+    }
+    .nav-button {
+      position: absolute;
+      background-color: #B687CD;
+      color: #F7E720;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      border-radius: 20px;
+      font-weight: bold;
+      height: 50px;
+            font-family: "Lilita One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    
+    }
+    td{
+      width: 160px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    td img{
+      width: 160px;
+    }
+
+    .top-btn { top: 30px; left: 50%; transform: translateX(-50%); }
+    .bottom-btn { bottom: 30px; left: 50%; transform: translateX(-50%); }
+    .left-btn { left: 30px; top: 50%; transform: translateY(-50%); }
+    .right-btn { right: 30px; top: 50%; transform: translateY(-50%); }
+
+    .content-frame {
+      background: linear-gradient(135deg, #b35ce3, #7928ca);
+      flex-direction: column;
+      z-index: 1;
+    }
+    .hidden {
+      pointer-events: none;
+      opacity: 0;
+    }
+    .visible {
+      pointer-events: auto;
+      opacity: 1;
+    }
+    .back-btn {
+      margin-top: 20px;
+      padding: 10px 16px;
+      background-color: #B687CD;
+      color: #F7E720;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 1.5rem;
+      cursor: pointer;
+      height: 50px;
+            font-family: "Lilita One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    #top-frame{
+      text-align: center;
+      justify-content: none;
+    }
+    .header{
+      width: 100%;
+    }
+    .header img{
+      width: 550px;
+    }
+    .card {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  background: #dbb9ed;
+  width: 600px;
+  border-radius: 5%;
+        font-family: "Lilita One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+}
+.label {
+  width: 200px;
+  border-radius: 5px;
+  background: #f7e720;
+}
+.frame-top{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.6s ease-in-out;
+  padding: 0;
+  margin: 0;
+        font-family: "Lilita One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+}
+.first{
+  height: 30%;
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+}
+.second{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+}
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="frame main" id="mainFrame">
+    <img src="../IMG/logo.png" alt="Logo">
+    <button class="nav-button top-btn" onclick="navigate('top')">Partnerek</button>
+    <button class="nav-button left-btn" onclick="navigate('left')">Rólunk</button>
+    <button class="nav-button right-btn" onclick="navigate('right')">Sütik kezelése</button>
+    <button class="nav-button bottom-btn" onclick="navigate('bottom')">Kapcsolat</button>
+  </div>
+<!------------------------------------------------------------------------------------------------------------>
+
+  <div class=" frame-top content-frame hidden" id="topFrame" style="flex-direction: column; transform: translateY(-100%);">
+
+    <div class="first">
+      <div class="header" >
+       <img src="../IMG/partnerek-headerr.png" alt="" >
+      </div>
+    </div>
+    <div class="second">
+        <table>
+          <tr>
+            <td><img src="../IMG/partner.png" alt="Partner 1"></td>
+            <td><img src="../IMG/partner.png" alt="Partner 2"></td>
+            <td><img src="../IMG/partner.png" alt="Partner 3"></td>
+            <td><img src="../IMG/partner.png" alt="Partner 4"></td>
+            <td><img src="../IMG/partner.png" alt="Partner 15"></td>
+            <td><img src="../IMG/partner.png" alt="Partner 5"></td>
+          </tr>
+          <tr>
+            <td><img src="../IMG/partner.png" alt="Partner 6"></td>
+            <td><img src="../IMG/partner.png" alt="Partner 7"></td>
+            <td><img src="../IMG/partner.png" alt="Partner 8"></td>
+            <td><img src="../IMG/partner.png" alt="Partner 9"></td>
+            <td><img src="../IMG/partner.png" alt="Partner 15"></td>
+            <td><img src="../IMG/partner.png" alt="Partner 10"></td>
+          </tr>
+          <tr>
+            <td><img src="../IMG/partner.png" alt="Partner 11"></td>
+            <td><img src="../IMG/partner.png" alt="Partner 12"></td>
+            <td><img src="../IMG/partner.png" alt="Partner 13"></td>
+            <td><img src="../IMG/partner.png" alt="Partner 14"></td>
+            <td><img src="../IMG/partner.png" alt="Partner 15"></td>
+            <td><img src="../IMG/partner.png" alt="Partner 15"></td>
+          </tr>
+        </table>
+        <button class="back-btn" onclick="goBack('top')">VISSZA 👇</button>
+    </div>
+
+  </div>
+<!------------------------------------------------------------------------------------------------------------>
+
+  <div class="frame content-frame hidden" id="leftFrame" style="flex-direction: column; transform: translateX(-100%);">
+    <img src="../IMG/header.png" width="30%" />
+    <div class="card">
+      <div class="label"><p>Cégnév</p></div>
+      <p>CLAP HUNGARY Korlátolt Felelősségű Társaság</p>
+    </div>
+    <button class="back-btn" onclick="goBack('left')">Vissza</button>
+  </div>
+
+<!------------------------------------------------------------------------------------------------------------>
+
+  <div class="frame content-frame hidden" id="rightFrame" style="flex-direction: column; transform: translateX(100%);">
+    <div class="firstLine">
+      <div class="leftCard">
+        <h1>SÜTIK KEZELÉSE</h1>
+        <p>A kezelesi informaciok megtalalhatoak <a href="https://clapngo.hu/wp-content/uploads/2025/04/Cookie-tajekoztato_Clapngo2.pdf">itt.</a></p>
+      </div>
+      <div class="centerCard"></div>
+      <div class="rightCard"></div>
+    </div>
+    <button class="back-btn" onclick="goBack('right')">Vissza</button>
+  </div>
+
+<!------------------------------------------------------------------------------------------------------------>
+
+  <div class="frame content-frame hidden" id="bottomFrame" style="flex-direction: column; transform: translateY(100%);">
+    <img src="header.png" alt="Bottom">
+    <button class="back-btn" onclick="goBack('bottom')">Vissza</button>
+  </div>
+</div>
+
+<!------------------------------------------------------------------------------------------------------------>
+
+
+<script>
+  function navigate(direction) {
+    const main = document.getElementById("mainFrame");
+    const frame = document.getElementById(direction + "Frame");
+
+    if (direction === "top") {
+      main.style.transform = "translateY(100%)";
+      frame.style.transform = "translateY(0%)"; 
+    } else if (direction === "bottom") {
+      main.style.transform = "translateY(-100%)";
+      frame.style.transform = "translateY(0%)";
+    } else if (direction === "left") {
+      main.style.transform = "translateX(100%)";
+      frame.style.transform = "translateX(0%)";
+    } else if (direction === "right") {
+      main.style.transform = "translateX(-100%)";
+      frame.style.transform = "translateX(0%)";
+    }
+
+    frame.classList.remove("hidden");
+    frame.classList.add("visible");
+  }
+
+  function goBack(direction) {
+    const main = document.getElementById("mainFrame");
+    const frame = document.getElementById(direction + "Frame");
+
+    main.style.transform = "translate(0, 0)";
+
+    if (direction === "top") {
+      frame.style.transform = "translateY(-100%)";
+    } else if (direction === "bottom") {
+      frame.style.transform = "translateY(100%)";
+    } else if (direction === "left") {
+      frame.style.transform = "translateX(-100%)";
+    } else if (direction === "right") {
+      frame.style.transform = "translateX(100%)";
+    }
+
+    setTimeout(() => {
+      frame.classList.add("hidden");
+      frame.classList.remove("visible");
+    }, 600);
+  }
+</script>
+</body>
+</html>

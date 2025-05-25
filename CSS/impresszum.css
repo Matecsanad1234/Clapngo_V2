@@ -1,63 +1,305 @@
-@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
-html {
-  height: 99vh;
-  width: 100%;
-  font-family: "Lilita One", sans-serif;
-  font-weight: 400;
+
+/* Add font files for Lilita One */
+@font-face {
+  font-family: 'Lilita One';
+  src: url('fonts/lilita-one.woff2') format('woff2'),
+       url('fonts/lilita-one.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
+}
+:root {
+  --font-family-lilita-one: 'Lilita One', sans-serif;
+  --text-rgb-247-231-32: rgba(247, 231, 32, 1);
+}
+
+.text-rgb-247-231-32 {
+  color: var(--text-rgb-247-231-32);
+}
+
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  height: 100%;
   width: 100%;
-  background: #550581;
-  background: radial-gradient(
-    circle,
-    rgba(85, 5, 129, 0.56) 50%,
-    rgba(171, 30, 248, 1) 100%
-  );
-  border: 0px;
-  margin: 0px;
-  padding: 20px;
-}
-button {
-  height: 40px;
-  width: 140px;
-  border-radius: 12px;
-  background-color: #b687cd;
-  border: none;
-  color: #f7e720;
-  font-size: 20px;
-  cursor: pointer;
-  font-family: "Lilita One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-button:hover {
-  animation: blup 0.4s ease-in-out;
+img {
+  max-width: 100%;
+  height: auto;
 }
-@keyframes blup {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
+
+.rectangle-98-2 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(219, 185, 237, 0.67);
+  border-radius: 208px;
+}
+
+.text-3 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  font-family: var(--font-family-lilita-one);
+  font-weight: normal;
+  font-size: 48px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-247-231-32);
+}
+
+.rectangle-97-4 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(182, 135, 205, 1);
+  border-radius: 176px;
+}
+
+.text-5 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  border: 3px solid rgba(182, 135, 205, 1);
+  font-family: var(--font-family-lilita-one);
+  font-weight: normal;
+  font-size: 64px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-rgb-247-231-32);
+}
+
+.ellipse-13-6 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  fill: rgba(255, 255, 255, 1);
+  border: none;
+  outline: none;
+}
+
+.image-37-7 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.partner-1-8 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.partner-2-9 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.partner-3-10 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.partner-4-11 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.partner-5-12 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.partner-6-13 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.partner-7-14 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.partner-8-15 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.partner-9-16 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.partner-10-17 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.partner-11-18 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.partner-12-19 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.partner-13-20 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.partner-14-21 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.partner-15-22 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.partner-16-23 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.partner-17-24 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.partner-18-25 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.partner-19-26 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.partner-20-27 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.partner-21-28 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.partner-22-29 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.partner-23-30 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.partner-24-31 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.macbook-pro-16-5-1 {
+@media (max-width: 1440px) {
+  .macbook-pro-16-5-1 {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
-.card {
-  display: flex;
-  flex-direction: row;
-  padding: 5px;
-  background: #dbb9ed;
-  width: 600px;
-  border-radius: 5%;
+
+@media (max-width: 768px) {
+  .macbook-pro-16-5-1 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
-.label {
-  width: 200px;
-  border-radius: 5px;
-  background: #f7e720;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
 }
